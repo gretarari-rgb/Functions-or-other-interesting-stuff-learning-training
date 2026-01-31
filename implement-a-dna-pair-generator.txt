@@ -1,0 +1,31 @@
+** start of script.js **
+
+
+
+function pairElement(string) {
+let result = []
+  for (let i = 0;i < string.length;i++) {
+    
+    if (string[i] === "A") {
+      result.push(["A" , "T"])
+    }
+
+    else if (string[i] === "T") {
+      result.push(["T" , "A"])
+    }
+
+    else if (string[i] === "C") {
+      result.push(["C" , "G"])
+    }
+
+    else if (string[i] === "G") {
+      result.push(["G" , "C"])
+    }
+  }
+return result
+}
+
+console.log(pairElement("ATGCCGTA"))
+
+** end of script.js **
+
