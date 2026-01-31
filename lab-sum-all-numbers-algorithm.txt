@@ -1,0 +1,30 @@
+** start of script.js **
+
+
+
+function sumAll(array) {
+let result = 0
+let number1
+let number2
+
+  if (array[0] < array[1]) {
+    number1 = array[0]
+    number2 = array[1]
+  }
+  else {
+    number1 = array[1]
+    number2 = array[0]
+  }
+console.log(number1)
+console.log(number2)
+  for (let i = number1;i <= number2;i++) {
+    result = result + i
+  }
+return result
+}
+
+console.log(sumAll([5,2]))
+
+
+** end of script.js **
+
