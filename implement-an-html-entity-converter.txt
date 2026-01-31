@@ -1,0 +1,42 @@
+** start of script.js **
+
+
+
+function convertHTML(string) {
+  let resultArray = []
+  let stringArray = string.split("")
+
+    for (let i = 0;i < string.length;i++) {
+      
+      if (stringArray[i] === "&") {
+        resultArray.push("&amp;")
+      }
+
+      else if (stringArray[i] === "<") {
+        resultArray.push("&lt;")
+      }
+
+      else if (stringArray[i] === ">") {
+        resultArray.push("&gt;")
+      }
+    
+      else if (stringArray[i] === '"') {
+        resultArray.push("&quot;")
+      }
+
+      else if (stringArray[i] === "'") {
+        resultArray.push("&apos;")
+      }
+      else {
+        resultArray.push(stringArray[i])
+      }
+    }
+
+  let result = resultArray.join("")
+return result
+}
+
+console.log(convertHTML("Dolce & Gabbana"))
+
+** end of script.js **
+
