@@ -1,0 +1,34 @@
+** start of script.js **
+
+
+
+function sumFibs(number) {
+let b = 1
+let resultArray = []
+let next = 1
+let result = 0
+  for (let a = 1;b <= number;) {
+    a = b
+    b = next
+    next = a + b
+
+    if (a % 2 !== 0) {
+      resultArray.push(a)
+      console.log(a)
+    }
+  }
+    
+for (let i = 0;i < resultArray.length;i++) {
+  result = result + resultArray[i]
+  console.log(resultArray.length)
+}
+
+console.log(resultArray)
+
+return result
+}
+
+console.log(sumFibs(233))
+
+** end of script.js **
+
