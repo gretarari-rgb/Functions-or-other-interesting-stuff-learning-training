@@ -1,0 +1,26 @@
+** start of script.js **
+
+
+function dropElements(array , func) {
+  let result = []
+  let found
+  for (let i = 0;i < array.length;i++) {
+
+    if (func(array[i]) === true) {
+      found = true
+    }
+    
+    if (found === true) {
+      result.push(array[i])
+    }
+
+  console.log(found)
+
+  }
+return result
+}
+
+console.log(dropElements([0, 1, 0, 1], function(n) {return n === 1;}))
+
+** end of script.js **
+
