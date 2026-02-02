@@ -1,0 +1,21 @@
+** start of script.js **
+
+
+
+function getIndexToIns(array , number) {
+  array.sort((a, b) => a - b)
+  console.log(array)
+
+  let index = array.findIndex((c ,) => c >= number)
+
+  if (index === -1) {
+    return array.length
+  }
+
+  else return index
+}
+
+console.log(getIndexToIns([3, 10, 5], 11))
+
+** end of script.js **
+
