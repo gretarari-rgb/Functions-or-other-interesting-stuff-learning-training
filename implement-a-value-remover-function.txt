@@ -1,0 +1,16 @@
+** start of script.js **
+
+
+
+function destroyer(array1 , ...args) {
+  let result = array1.filter(item => !args.includes(item))
+
+
+return result
+}
+
+
+console.log(destroyer(["tree", "hamburger", 53], "tree", 53))
+
+** end of script.js **
+

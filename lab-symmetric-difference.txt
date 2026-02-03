@@ -1,0 +1,26 @@
+** start of script.js **
+
+
+
+function diffArray(array1 , array2) {
+
+let result = array1.filter(item => {
+  return !array2.includes(item)
+  })
+
+let result2 = array2.filter(item => {
+  return !array1.includes(item)
+  })
+
+console.log(result)
+console.log(result2)
+
+return [...result, ...result2]
+}
+
+
+
+console.log(diffArray(["apple", "orange"], ["apple", "orange", "banana", "grape"]))
+
+** end of script.js **
+
