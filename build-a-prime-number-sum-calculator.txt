@@ -1,0 +1,37 @@
+** start of script.js **
+
+
+
+function isPrime(number) {
+
+if (number < 2) {
+  return false
+}
+
+for (let count = 2;number > count;count++) {
+  if (number % count === 0) {
+    return false
+  } 
+}
+return true
+}
+
+function sumPrimes(number) {
+let sum = 0
+console.log(number)
+
+  for (let count = 0;number >= count;count++) {
+      console.log(count)
+
+    if (isPrime(count)) {
+      sum = sum + count
+      console.log(true)
+    }
+  }
+return sum
+}
+
+console.log(sumPrimes(49))
+
+** end of script.js **
+
