@@ -1,0 +1,18 @@
+** start of script.js **
+
+
+
+function whatIsInAName(array, object) {
+
+  let keys = Object.keys(object)
+
+  return array.filter(item => {
+    
+    return keys.every(key => item[key] === object[key])
+  }
+)}
+
+console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }))
+
+** end of script.js **
+
