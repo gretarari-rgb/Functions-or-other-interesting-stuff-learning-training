@@ -1,0 +1,46 @@
+** start of script.js **
+
+
+
+function smallestCommons(array) {
+
+let numberBig
+let numberSmall 
+let result
+
+  if (array[0] > array[1]) {
+    numberBig = array[0];
+    numberSmall = array[1];
+  }
+  else if (array[1] > array[0]) {
+    numberBig = array[1];
+    numberSmall = array[0];
+  }
+  else {
+    return array[0]
+  }
+
+let smallComm = 1
+
+  for (let count = numberSmall;count <= numberBig; count++) {
+    console.log(count)
+    if (smallComm % count === 0) {
+      console.log(smallComm)
+      continue
+    }
+    else {
+      let temp = smallComm
+      while (smallComm % count !==0) {
+        smallComm += temp        
+      }
+      console.log(smallComm)
+    }
+  }
+return smallComm
+}
+
+
+console.log(smallestCommons([2, 10]))
+
+** end of script.js **
+
